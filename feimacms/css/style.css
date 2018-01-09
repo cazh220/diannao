@@ -1,0 +1,96 @@
+BODY{ MARGIN: 0px;}
+
+.top{ width:100%; height:163px; overflow:hidden;}
+.topBanner{ width:1000px; margin:auto; height:120px;}
+.topDaohang{ width:100%; height:43px; background-image:url(../images/nav_bg.jpg); overflow:hidden;}
+.topDaohangBar{ width:1000px; height:43px; margin:auto;}
+.topDaohangTxt{ width:142px; height:43px; float:left; text-align:center; line-height:43px; font-size:16px; font-weight:bold;}
+.topDaohangTxt a{ text-decoration:none; color:#ffffff;}
+.topDaohangTxt a:hover{ color:#C33C28;}
+
+.main{ width:100%; height:auto;overflow:hidden;}
+
+.banner{ width:1000px; height:325px; margin:auto; margin-top:10px;}
+
+.jieshao{ width:998px; height:311px; margin:auto; margin-top:10px; border:1px solid #CCCCCC;}
+.jieshaoTop{ width:998px; height:30px; float:left; border-bottom:1px solid #CCCCCC;}
+.jieshaoTopLeft{ width:942px; height:30px; line-height:30px; text-align:left; margin-left:10px; font-size:16px; font-weight:bold; float:left; color:#213782;}
+.jieshaoTopRight{ width:36px; height:11px; margin-right:10px; float:left; margin-top:10px;}
+.jieshaoLogo{ width:330px; height:270px; margin:5px 5px 5px 5px; float:left;} 
+.jieshaoText{ width:648px; height:270px; margin:5px 5px 5px 5px; float:left; font-size:16px; line-height:25px;}
+
+.tupian{ width:998px; height:271px; margin:auto; margin-top:10px; border:1px solid #CCCCCC;}
+.tupianTop{ width:998px; height:30px; float:left; border-bottom:1px solid #CCCCCC;}
+.tupianTopLeft{ width:942px; height:30px; line-height:30px; text-align:left; margin-left:10px; font-size:16px; font-weight:bold; float:left; color:#213782;}
+.tupianTopRight{ width:36px; height:11px; margin-right:10px; float:left; margin-top:10px;}
+.tupianList{ width:200px; height:230px; margin:5px 5px 5px 5px; float:left;}
+.tupianListTupian{ width:200px; height:200px; float:left;}
+.tupianListTupian img { border:0px;}
+.tupianListText{ width:200px; height:30px; float:left; line-height:30px; font-size:15px; text-align:center;}
+.tupianListText a{ text-decoration:none; color:#000000;}
+.tupianListText a:hover{ text-decoration:underline; color:#C33C28;}
+
+.content{ width:1000px; height:auto; margin:auto; margin-top:10px;}
+.contentLeft{ width:260px; height:480px; float:left; border:1px solid #CCCCCC; padding-top:20px;}
+.contentLeftList{ width:260px; height:50px; line-height:50px; float:left; text-align:center; font-size:16px; }
+.contentLeftList a{ text-decoration:none; color:#213782;}
+.contentLeftList a:hover{ text-decoration:underline; color:#C33C28;}
+.contentRight{ width:726px; height:auto; float:left; margin-left:10px; border:1px solid #CCCCCC;}
+.contentRightTop
+{ 
+width:716px; height:50px; float:left; padding-left:10px; line-height:50px;font-size:16px;color:#213782;border-bottom:1px solid #CCCCCC;
+}
+.jieshaoContent{ width:706px; height:auto; padding:10px; line-height:30px; font-size:15px;color:#213782; float:left;}
+.zhaopinContent{ width:706px; height:auto; padding:10px; line-height:30px; font-size:15px;color:#213782; float:left;}
+.wenzhangList{ width:726px; float:left; height:35px; line-height:35px;font-size:15px;color:#213782;}
+.wenzhangList a{ text-decoration:none; color:#213782;}
+.wenzhangList a:hover{ text-decoration:underline; color:#C33C28;}
+.wenzhangListText{ width:616px; padding-left:10px; float:left; text-align:left;}
+.wenzhangListDate{ width:100px; text-align:center; float:left;}
+.wenzhangListFenye
+{ 
+width:726px; float:left; text-align:center;font-size:16px;color:#213782; height:50px; line-height:50px;border-top:1px solid #CCCCCC;
+}
+.wenzhangListFenye a{ text-decoration:none; color:#213782;}
+.wenzhangListFenye a:hover{ text-decoration:underline; color:#C33C28;}
+.wenzhangTitle{width:726px; height:50px;line-height:50px; text-align:center; float:left;font-size:16px;color:#213782; font-weight:bold;}
+.wenzhangContent{width:706px; height:auto; padding:10px; line-height:30px; font-size:15px;color:#213782; float:left;}
+.tpList{ width:170px; margin:10px 5px 10px 5px; height:200px; float:left;}
+.tpListTupian{ width:170px; height:170px;float:left;}
+.tpListTupian img{border:1px solid #CCCCCC;}
+.tpListText{ width:170px; height:30px; line-height:30px; float:left; text-align:center; font-size:15px;}
+.tpListText a{ text-decoration:none;  color:#213782; }
+.tpListText a:hover{text-decoration:underline; color:#C33C28;}
+.tpListFenye
+{ 
+width:726px; float:left; text-align:center;font-size:16px;color:#213782;height:50px; line-height:50px;border-top:1px solid #CCCCCC;
+}
+.tpListFenye a{text-decoration:none;  color:#213782;}
+.tpListFenye a:hover{text-decoration:underline; color:#C33C28;}
+.tpTitle{width:726px; height:50px;line-height:50px; text-align:center; float:left;font-size:16px;color:#213782; font-weight:bold;}
+.tpTupian{ width:726px; height:500px; float:left;margin-top:20px; margin-bottom:20px;}
+.tpTupianTupian{ width:500px; height:500px; margin:auto; }
+.tpTupian img{border:1px solid #CCCCCC;}
+.tpContent{width:706px; height:auto;line-height:30px; font-size:15px;color:#213782; float:left; padding:10px;}
+
+.liuyan{ width:726px; height:auto; margin-top:30px; margin-bottom:100px; float:left;}
+.liuyanList{ width:726px; height:50px; line-height:50px; float:left;font-size:15px;color:#213782; }
+.liuyanListLeft{ width:250px; height:50px; line-height:50px; text-align:right; float:left;}
+.liuyanListRight{ width:476px; text-align:left; height:35px; float:left; padding-top:15px;}
+.liuyanListArea{ width:726px; height:auto; line-height:50px; float:left;font-size:15px;color:#213782; }
+.liuyanListAreaLeft{ width:250px; height:auto; line-height:50px; text-align:right; float:left;}
+.liuyanListAreaRight{ width:476px; text-align:left; height:auto; float:left; padding-top:15px;}
+.liuyanBotton{ width:726px; height:50px; line-height:50px; text-align:center; float:left; padding-top:30px;}
+.lxContent{ width:726px; height:500px; float:left;}
+.lxText{ width:726px; height:50px; line-height:50px; font-size:16px; color:#213782; float:left;}
+.lxTextLeft{ width:250px; height:50px; line-height:50px; text-align:right; float:left;}
+.lxTextRight{ width:476px; height:50px; line-height:50px; text-align:left; float:left;}
+
+.bottom{ width:100%;height:150px;border-top:1px solid #CCCCCC; margin-top:20px; overflow:hidden;}
+.bottomMiddle{ width:1000px; height:90px; line-height:90px; margin:auto; text-align:center; font-size:16px;}
+.bottomMiddle span{ margin-left:15px;}
+.bottomMiddle a{ color:#000000; text-decoration:none;}
+.bottomMiddle a:hover{ color:#C33C28; text-decoration:underline;}
+.bottomBar{ width:1000px; margin:auto; height:60px; text-align:center;font-size:15px;color:#000000; }
+.bottomBar a{ color:#000000; text-decoration:none;}
+.bottomBar a:hover{ color:#C33C28; text-decoration:underline;}
