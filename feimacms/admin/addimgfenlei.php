@@ -6,7 +6,20 @@
 <LINK rel=stylesheet type=text/css href="css/style.css">
 </HEAD>
 <BODY>
+<?php
 
+if($_POST['mingcheng'])
+{
+	$mingcheng = $_POST['mingcheng'] ? trim($_POST['mingcheng']) : '';
+	$sql = "INSERT INTO hyimgfenlei_table(fenleiname_ziduan)VALUES('".$mingcheng."')";
+	$result=mysql_query($sql);
+	if($result)
+	{
+		echo "<script>alert('添加分类成功');</script>";
+	}
+}
+
+?>
 <div class="top">
 <div class="topTop">
 <div class="topTopLeft">网站管理中心</div>
@@ -46,7 +59,7 @@
 <div class="menuMin"><a href="adminliuyan.php">留言管理</a></div>
 </div>
 
-
+<form action="" method="POST">
 <div class="content">
 <div class="contentTop">添加产品分类</div>
 <div class="addfenlei">
@@ -54,9 +67,8 @@
 </div>
 </div>
 <div class="addfenleiBtn"><input name="submit" type="submit" value="提 交"></div>
-<div class="shiyong">试用版不能使用该功能，请购买正式版，价格100元，提供终身技术支持，联系QQ：312637699</div>
 </div>
-
+</form>
 
 </div>
 </div>

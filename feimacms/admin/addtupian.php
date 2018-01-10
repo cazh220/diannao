@@ -51,7 +51,24 @@ function Check()
 </script>
 </HEAD>
 <BODY>
+<?php
+if($_POST)
+{
+	$upfile = $_POST['upfile'] ? trim($_POST['upfile']) : '';
+	$title = $_POST['title'] ? trim($_POST['title']) : '';
+	$tupianFenlei = $_POST['tupianFenlei'] ? intval($_POST['tupianFenlei']) : '';
+	$content  = $_POST['content'] ? trim($_POST['content']) : '';
+	
+	$sql = "INSERT INTO hyimg_table(title_ziduan, content_ziduan, date_ziduan, img_ziduan, fenlei_ziduan)VALUES('".$title."', '".$content."', '".$upfile."', '".$tupianFenlei."')";
+	echo $sql;die;
+	$result=mysql_query($sql);
+	if($result)
+	{
+		echo "<script>alert('添加成功');</script>";
+	}
+}
 
+?>
 <div class="top">
 <div class="topTop">
 <div class="topTopLeft">网站管理中心</div>
@@ -70,6 +87,7 @@ function Check()
 </div>
 </div>
 
+<form action="" method="POST">
 <div class="main">
 <div class="manage">
 <div class="menu">
@@ -127,12 +145,11 @@ function Check()
 <div class="qiyeTupianLeft">产品说明：</div><div class="qiyeTupianRight"><textarea name="content" style="width:80%;height:450px;visibility:hidden;"></textarea></div>
 </div>
 <div class="qiyeTupianBtn"><input name="submit" type="submit" value="提 交"></div>
-<div class="shiyong">试用版不能使用该功能，请购买正式版，价格100元，提供终身技术支持，联系QQ：312637699</div>
 </div>
 
 </div>
 </div>
-
+</form>
 <div class="bottom">
 <div class="bottomMiddle">网站管理中心</div>
 </div>

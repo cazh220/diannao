@@ -52,7 +52,24 @@ function Check()
 </script>
 </HEAD>
 <BODY>
+<?php 
+include("../include/conn.php");
+if($_POST)
+{
+	$title = $_POST['title'] ? trim($_POST['title']) : '';
+	$id = $_POST['id'] ? intval($_POST['id']) : '';
+	$newsFenlei = $_POST['newsFenlei'] ? intval($_POST['newsFenlei']) : '';
+	$content = $_POST['content'] ? trim($_POST['content']) : '';
+	
+	$sql = "UPDATE hynews_table SET title_ziduan = '".$title."', content_ziduan = '".$content."', fenlei_ziduan = '".$newsFenlei."' WHERE id = ".$id;
+	$result=mysql_query($sql);
+	if($result)
+	{
+		echo "<script>alert('更新新闻成功');</script>";
+	}
+}
 
+?>
 <div class="top">
 <div class="topTop">
 <div class="topTopLeft">网站管理中心</div>
@@ -102,7 +119,7 @@ $result=mysql_query($query);
 $row = mysql_fetch_array($result);
 
 ?>
-
+<form action="" method="POST">
 <div class="content">
 <div class="contentTop">修改新闻</div>
 <div class="news">
@@ -110,6 +127,7 @@ $row = mysql_fetch_array($result);
 <input type="hidden" name="id" value="<?php  echo $row["id"];?>" />
 </div>
 </div>
+
 <div class="news">
 <div class="newsLeft">新闻分类：</div>
 <div class="newsFenleiRight">
@@ -135,9 +153,8 @@ $row = mysql_fetch_array($result);
 <div class="newsLeft">新闻内容：</div><div class="newsRight"><textarea name="content" style="width:80%;height:450px;visibility:hidden;"><?php  echo $row["content_ziduan"];?></textarea></div>
 </div>
 <div class="newsBtn"><input name="submit" type="submit" value="提 交"></div>
-<div class="shiyong">试用版不能使用该功能，请购买正式版，价格100元，提供终身技术支持，联系QQ：312637699</div>
 </div>
-
+</form>
    <?php 
 mysql_free_result($result); 
 mysql_close(); 
